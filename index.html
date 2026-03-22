@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prashanth VS Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    background: linear-gradient(135deg, #fdfdfe, #ffffff);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    background: rgba(237, 171, 5, 0.997);
+    backdrop-filter: blur(12px);
+    color: rgb(247, 250, 250);
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+}
+
+.sidebar a {
+    display: block;
+    color: rgb(255, 255, 255);
+    margin: 12px 0;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    flex: 1;
+    padding: 25px;
+}
+
+/* Cards */
+.card {
+    background: rgb(35, 203, 245);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* Fade */
+.fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s;
+}
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Skills */
+.skills span {
+    display: inline-block;
+    background: rgba(36, 200, 233, 0.2);
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+/* Cursor glow */
+.cursor-glow {
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(208, 255, 0, 0.4), transparent);
+    pointer-events: none;
+}
+
+/* Responsive */
+@media(max-width:900px){
+    body {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <h2>PRASHANTH VS</h2>
+    <p id="typing"></p>
+
+    <a href="#summary">Profile</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#extra">Extra</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<!-- Main -->
+<main>
+
+<section id="summary" class="card fade">
+<h2>Profile Summary</h2>
+<p>
+Prashanth Vs holds a Bachelor's Degree and is currently working as Senior LIDAR Engineer at Data Collection Infotech (DCIL) with 6+ years experience.
+Proven track record in handling LIDAR Point Clouds and advanced classification techniques.
+Expert in 3D modeling, power line classification, airborne classification, and terrain deployment.
+Strong communication skills with training, auditing, and quality check experience.
+Basic coding in Python, JavaScript, HTML, CSS. Adaptable team player with ability to work under pressure.
+</p>
+</section>
+
+<section id="skills" class="card fade">
+<h2>Key Skills</h2>
+<div class="skills">
+<span>Lidar Engineer</span>
+<span>Technical Analyst</span>
+<span>Python</span>
+<span>JavaScript</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>Communication Skills</span>
+<span>3D Modeling</span>
+<span>Power Line Classification</span>
+<span>Airborne Classification</span>
+<span>Terrain Deployment</span>
+<span>Training Support</span>
+<span>Auditing Support</span>
+<span>Microsoft Excel</span>
+<span>Video Editing</span>
+<span>Email Drafting</span>
+<span>SQLite</span>
+<span>Microsoft PowerPoint</span>
+<span>DB Management</span>
+<span>Final Audit</span>
+<span>Quality Check</span>
+<span>QGIS</span>
+<span>GDAL</span>
+<span>MicroStation</span>
+<span>Terraphoto</span>
+<span>Quality Engineer</span>
+</div>
+</section>
+
+<section id="experience" class="card fade">
+<h2>Work Experience</h2>
+
+<h3>Senior LIDAR Engineer</h3>
+<p>Data Collection Infotech (DCIL) | 09/2019 - Present</p>
+
+<p>
+Currently working as Senior Lidar Engineer at DCIL. Holds Bachelor's Degree from Bangalore University.
+</p>
+
+<p><strong>Technical Expertise:</strong></p>
+<ul>
+<li>Lidar sensor development & calibration</li>
+<li>Point cloud processing & algorithms</li>
+<li>Sensor fusion (camera, radar, GPS)</li>
+<li>Autonomous navigation & mapping systems</li>
+<li>Obstacle detection systems</li>
+<li>Surveying & mapping</li>
+<li>Environmental monitoring</li>
+<li>Handling Lidar point clouds</li>
+<li>Airborne classification</li>
+<li>Advanced Lidar classification</li>
+</ul>
+
+</section>
+
+<section id="education" class="card fade">
+<h2>Education</h2>
+
+<p><strong>MCA - DATA ANALYTICS (PURSUING)</strong><br>
+Manipal University |</p>
+
+<p><strong>B.Com - IT (2025)</strong><br>
+Bangalore University | CGPA: 8.2/10</p>
+
+<p><strong>12th (PCMB-2019)</strong><br>
+Karnataka | 60%</p>
+
+<p><strong>10th (2017)</strong><br>
+Karnataka | 65-69%</p>
+
+</section>
+
+<section id="extra" class="card fade">
+<h2>Languages</h2>
+<p>English, Kannada, Tamil, Telugu, Hindi</p>
+
+<h2 style="margin-top:10px;">Hobbies</h2>
+<p>Cricket, Gym, Badminton</p>
+
+<h2 style="margin-top:10px;">Extra Activities</h2>
+<p>
+Drawing & Sculpting (Devotional, Adventure, Cartoons). 
+Created many artworks displayed at home.
+</p>
+
+<p>
+Strong team worker, adaptable to challenging situations, capable of working under pressure and meeting deadlines.
+</p>
+</section>
+
+<section id="contact" class="card fade">
+<h2>Contact</h2>
+<p>📞 (+91) 9740374430</p>
+<p>📧 prashabhuvi007@gmail.com</p>
+<p>📍 Bengaluru, India</p>
+<p>🕒 Experience: 6 Years 5 Months</p>
+</section>
+
+</main>
+
+<script>
+// Typing
+const text = "POINT CLOUD ENGINEER";
+let i = 0;
+function typing(){
+    if(i < text.length){
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing, 70);
+    }
+}
+typing();
+
+// Fade animation
+const faders = document.querySelectorAll('.fade');
+window.addEventListener('scroll', () => {
+    faders.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 100){
+            el.classList.add('show');
+        }
+    });
+});
+
+// Cursor glow
+const glow = document.createElement('div');
+glow.classList.add('cursor-glow');
+document.body.appendChild(glow);
+
+document.addEventListener('mousemove', (e) => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+});
+
+// Smooth scroll
+document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function(e){
+        if(this.getAttribute('href').startsWith("#")){
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href'))
+                .scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+</script>
+
+</body>
+</html>
